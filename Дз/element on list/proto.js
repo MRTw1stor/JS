@@ -7,7 +7,7 @@ const values = [
     { value: '5', label: 'Option green' },
     { value: '6', label: 'Option yellow' },
     { value: '7', label: 'Option black' }
-    ]
+]
 let selectedIndex = 0
 
 function createDropDownList(values, selectValue) {
@@ -25,5 +25,5 @@ function createDropDownList(values, selectValue) {
     }
     select.selectedIndex = selectedIndex
     return select
-    }
+}
 createDropDownList(values,"11")
