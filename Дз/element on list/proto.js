@@ -9,7 +9,7 @@ const values = [
   { value: '7', label: 'Option black' }
 ]
 
-function createDropDownList(values, selectValue = values[0].value) {
+function createDropDownList(values, selectLabel = values[0].value) {
   const select = document.createElement('select')
   document.body.append(select)
   for (let i = 0; i < values.length; i++) {
@@ -17,7 +17,7 @@ function createDropDownList(values, selectValue = values[0].value) {
     select.append(option)
     option.value = values[i].value
     option.label = values[i].label
-    if (values[i].value === selectValue) {
+    if (values[i].value === selectLabel) {
       selectedIndex = i
     }
   }
