@@ -2,7 +2,8 @@ let user = {
 	name: 0,
 	age: 30,
 }
-if (typeof user == null) {
+
+if (Object.keys(user).length > 0) {
 	console.log("объект не пустой")
 	if ("age" in user == true) {
 		console.log("age есть")
