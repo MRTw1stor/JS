@@ -1,0 +1,57 @@
+/* Задание 6 */
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+}
+/* Задание 7 */
+.square2 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+/* Задание 8.1 */
+.square3 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+#zadanie8_1 {
+  display: flex;
+  gap: 1em;
+}
+/* Задание 8.2 */
+.square4 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+#zadanie8_2 {
+  display: flex;
+  gap: 1em;
+}
+/* Задание 9 */
+#inputBox{
+  width: 310px;
+  height: 15px;
+  margin-bottom: 10px;
+}
+.rd1{
+  width: 75px;
+  height: 75px;
+  margin-bottom: 10px;
+}
+.rd2{
+  width: 75px;
+  height: 75px;
+  margin-bottom: 10px;
+}
+.rd3{
+  width: 75px;
+  height: 75px;
+  margin-bottom: 10px;
+}
+.rd4{
+  width: 75px;
+  height: 75px;
+}
