@@ -10,7 +10,7 @@ function game() {
     while(input !== null){
         if (isNaN(parseInt(input))) {
             input = prompt("Введите число!")
-            game()
+            game
         } 
         else if (parseInt(input) > number) {
             input = prompt("Меньше!")
