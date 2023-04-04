@@ -1,6 +1,6 @@
 "use strict"
 
-function start(nazvanie) {
+function todo(nazvanie) {
   // Cоздаем заголовок
   function createTitle(teg) {
     let title = document.createElement("h1")
@@ -77,7 +77,7 @@ function start(nazvanie) {
     container.append(todoList)
 
     // Вешаем события на кнопки
-    function pop(event) {
+    function setIvents(event) {
       event.preventDefault();
       let todoItem = createItem();
 
@@ -115,10 +115,10 @@ function start(nazvanie) {
       todoList.append(todoItem.item);
       todoForm.input.value = "";
     }
-    todoForm.form.addEventListener("submit", pop);
+    todoForm.form.addEventListener("submit", setIvents);
   })
 }
 
-start("Мои дела")
-start("Дела мамы")
-start("Дела папы")
+todo("Мои дела")
+todo("Дела мамы")
+todo("Дела папы")
