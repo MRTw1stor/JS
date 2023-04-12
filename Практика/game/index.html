@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Игра в пары</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Poiret+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script defer src="proto.js"></script>
+</head>
+<body>
+  <div class="back"></div>
+  <div class="container">
+    <form class="settings">
+      <div class="form-group">
+        <label>
+          Сколько карточек Вы хотите?
+          <input class="form-control" name="cards-col">
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label" >
+          <input class="form-check-input" type="checkbox" name="timer" value="yes">
+          Игра на время
+        </label>
+      </div>
+      <button id="start" class="btn btn-primary btn-lg ">Начать игру</button>
+    </form>
+    <div class="header"></div>
+    <div class="board hidden"></div>
+    <div class="restart-btn-wrapper">
+      <button id="again" class="btn btn-info play-again hidden">Сыграть ещё раз</button>
+    </div>
+    <div id="toast-container" class="toast-container">
+      <div class="toast">
+        <div class="toast-header">
+          <strong class="me-auto text-danger toast-title">Ошибка</strong>
+          <button id="close" class="btn-close" data-bs-dismiss="toast"></button>
+        </div>
+        <div class="toast-body">В поле можно ввести чётное число от 2 до 20</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
