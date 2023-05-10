@@ -36,15 +36,9 @@ for (let i = 0; i < th.length; i++) {
       let aVal = a.getElementsByTagName("td")[index].textContent;
       let bVal = b.getElementsByTagName("td")[index].textContent;
       if (isAscending) {
-        return aVal.localeCompare(bVal, undefined, {
-          numeric: true,
-          sensitivity: "base",
-        });
+        return aVal.localeCompare(bVal);
       } else {
-        return bVal.localeCompare(aVal, undefined, {
-          numeric: true,
-          sensitivity: "base",
-        });
+        return bVal.localeCompare(aVal);
       }
     });
     for (let m = 0; m < rowArray.length; m++) {
