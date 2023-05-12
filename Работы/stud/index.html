@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="proto.js" defer></script>
+  </head>
+  <body>
+    <h1 id="title">Список студентов</h1>
+    <div class="adding">
+      <button class="new">Панель упревления студентами</button>
+    </div>
+
+    <div class="modal">
+      <table id="addStudent">
+        <tr>
+          <td>Имя <br /><input id="name" type="text" /></td>
+          <td>Фамилия <br /><input id="surname" type="text" /></td>
+          <td>Отчество <br /><input id="secondname" type="text" /></td>
+          <td>Дата рождения <br /><input id="birdh" type="date" /></td>
+          <td>
+            Год начала обучения <br /><input id="teachstart" type="text" />
+          </td>
+          <td>Факультет <br /><input id="faculty" type="text" /></td>
+          <td>
+            <button id="add">Добавить студента</button>
+          </td>
+          <td>
+            <button id="close">Закрыть</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="modalBack"></div>
+    <table id="students">
+      <tr class = "titles">
+        <th>ФИО</th>
+        <th>Факулетет</th>
+        <th>Дата рождения и возраст</th>
+        <th>Годы обучения и курс</th>
+      </tr>
+    </table>
+  </body>
+</html>
