@@ -1,9 +1,7 @@
 let pages = 272;
 async function getIdPage(id) {
   let responce = await fetch(`https://gorest.co.in/public/v2/posts?page=${id}`);
-  console.log(responce);
   let data = await responce.json();
-  console.log(data.length);
   return data;
 }
 
