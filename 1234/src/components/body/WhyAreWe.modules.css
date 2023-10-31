@@ -1,0 +1,138 @@
+.Whyarewe{
+    position: absolute;
+    margin-top: 90vh;
+}
+
+.whytitle1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+}
+
+.whytitle2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10vh;
+}
+
+#whytext{
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+#why1{
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+#why2{
+    margin-left: 18vh;
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+#why3{
+    margin-left: 18vh;
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+#why4{
+    margin-left: 18vh;
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+#why5{
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+#why6{
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+#elipse1{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: solid #514A7E;
+    background-color: #514A7E;
+    border-radius: 20px;
+    left: 9.5%;
+    margin-top: 2.5vh;
+}
+
+#elipse2{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: solid #514A7E;
+    background-color: #514A7E;
+    border-radius: 40px;
+    left: 70%;
+    margin-top: -2.5vh;
+}
+
+#elipse3{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: solid #514A7E;
+    background-color: #514A7E;
+    border-radius: 40px;
+    left: 26%;
+    margin-top: 2.5vh;
+}
+
+#elipse4{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: solid #514A7E;
+    background-color: #514A7E;
+    border-radius: 20px;
+    left: 82.5%;
+    margin-top: 0.5vh;
+}
+
+#elipse5{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: solid #514A7E;
+    background-color: #514A7E;
+    border-radius: 60px;
+    left: 76%;
+}
+
+#elipse6{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: solid #514A7E;
+    background-color: #514A7E;
+    border-radius: 60px;
+    left: 56%;
+}
