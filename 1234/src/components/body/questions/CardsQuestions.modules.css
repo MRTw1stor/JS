@@ -1,0 +1,38 @@
+.QuestionsItems{
+    margin-top: 3%;
+}
+
+.itemss{
+    border-bottom: 1px solid #7D7D7D;
+    margin-bottom: 2%;
+}
+
+.Title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.titletext{
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#plus{
+    transform: rotate(45deg);
+}
+
+.Text{
+    width: 95%;
+}
+
+.text{
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 118%;
+}

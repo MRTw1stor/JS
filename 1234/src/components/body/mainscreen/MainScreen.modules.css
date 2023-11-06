@@ -1,0 +1,109 @@
+@import url('https://fonts.cdnfonts.com/css/bad-script');
+
+.main{
+    height: 80vh;
+}
+
+.Rectangle22{
+    display: inline-block;
+    float: left;
+}
+
+.Rectangle21{
+    display: inline-block;
+    float: right;
+    margin-top: 0.5%;
+}
+
+#Rectangle22{
+    width: 27vh;
+    height: 25vh;
+}
+
+#Rectangle21{
+    width: 53vh;
+    height: 46vh;
+}
+
+.Hellotext{
+    height: 20vh;
+    position: absolute;
+    top: 40%;
+    bottom: 0;
+}
+
+#hello1{
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Roboto;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 70px;
+    text-align: left;
+}
+
+#hello2{
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Bad Script', sans-serif;
+    font-style: italic;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 52px;
+    text-align: left;
+    color: #514A7E;
+}
+
+#none{
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.Titletext{
+    height: 10vh;
+    position: absolute;
+    top: 60%;
+    bottom: 0;
+}
+
+
+#title1{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    text-align: left;
+    color: #7D7D7D;    
+}
+
+.Circle{
+    position: absolute;
+    width: 20.5vh;
+    height: 20.5vh;
+    border: solid #514A7E;
+    border-radius: 20.5vh;
+    top: 67%;
+    left: 41%;
+}
+
+#title2{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 8vh;
+    margin-left: 4vh; 
+    margin-bottom: 0; 
+    color: #514A7E;  
+}
+
+#Arrow8{
+    margin-left: 8vh;
+}
