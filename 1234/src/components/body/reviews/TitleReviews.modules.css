@@ -1,0 +1,11 @@
+.ReviewsText{
+    margin-top: 8%;
+}
+
+#reviewtext{
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 87.305%;
+}

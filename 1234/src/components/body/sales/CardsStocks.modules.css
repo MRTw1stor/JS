@@ -1,0 +1,102 @@
+.Stocks{
+    margin-top: 5%;
+}
+
+.ItemsSales{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#images{
+    height: 30vh;
+    width: 25vh;
+}
+
+.Prices{
+    margin-bottom: 3%;
+}
+
+.price{
+    display: inline-block;
+    margin-left: 2vh;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    text-align: left;
+    color: #7D7D7D;
+    text-decoration-line: line-through;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.discauntprice{
+    display: inline-block;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.name_icons{
+    height: 3vh;
+}
+
+.name{
+    float: left;
+    display: inline-block;
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.icons{
+    float: right;
+    display: inline-block;
+}
+
+#shoples{
+    margin-left: 1vh;
+}
+
+.stars_button{
+    height: 3vh;
+}
+
+.details{
+    float: left;
+    height: 4vh;
+    width: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFDF5;
+    border: 0.5px solid #121212;
+}
+
+#details{
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#stars{
+    float: right;
+    margin-left: 5px;
+    margin-top: 11%;
+}
+
+#Arrow9{
+    margin-left: 1vh;
+}
