@@ -1,0 +1,69 @@
+@import url('https://fonts.cdnfonts.com/css/bad-script');
+
+.questions{
+    margin-top: 5%;
+    padding-left: 10vh;
+    padding-right: 10vh;
+}
+
+.questionstitle{
+    margin-bottom: 5%;
+}
+
+#questionstext1{
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 35px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#questionstext2{
+    font-family: 'Bad Script', sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: left;
+    color: #514A7E;
+    margin-left: 29%;
+}
+
+.questionitem{
+    border-bottom: 1px solid #7D7D7D;
+    margin-bottom: 2%;
+}
+
+.elemtitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.elemtext1{
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#plus{
+    transform: rotate(45deg);
+    margin-bottom: 3%;
+}
+
+.titleelem{
+    width: 95%;
+}
+
+.elemtext2{
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+    margin-top: 5vh;
+}

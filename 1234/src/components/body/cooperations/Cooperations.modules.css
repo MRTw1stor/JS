@@ -1,0 +1,66 @@
+.cooperations{
+    margin-top: 5%;
+    padding-left: 10vh;
+    padding-right: 10vh;
+}
+
+.Cooperationstexts{
+    height: 30vh;
+}
+
+.cooperationstext{
+    margin-bottom: 1%;
+}
+
+#cooperationstext1{
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 90%;
+    margin-top: 0;
+    margin-bottom: 3%;
+}
+
+#cooperationstext2{
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+}
+
+.cooperationstextitems{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cooperationstextitem{
+    width: 25vh;
+    height: 13vh;
+    text-align: center;
+}
+
+.cooperationsitemtext{
+    margin-bottom: 3%;
+}
+
+#cooperationsitemtext1{
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 88%;
+}
+
+.cooperationsitems{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cooperationsitem{
+    width: 20vh;
+    height: 5vh;
+    text-align: center;
+}
