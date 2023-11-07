@@ -1,0 +1,63 @@
+.Footers{
+    display: flex;
+    justify-content: center;
+}
+
+.Footer{
+    background-color: #514A7E;
+    height: 30vh;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 10%;
+}
+
+.Information{
+    margin-right: 7%;
+}
+
+.textinform{
+    color: #FFFDF5;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 2vh;
+}
+
+.Item{
+    height: 1vh;
+    width: 23vh;
+}
+
+.item{
+    height: 1vh;
+    width: 10vh;
+    margin-bottom: 2vh;
+}
+
+.Items{
+    display: flex;
+    height: 3vh;
+    margin-bottom: 10%;
+}
+
+.itemtext{
+    color: #FFFDF5;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 1vh;
+}
+
+#LogoNeon{
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 10%;
+}
