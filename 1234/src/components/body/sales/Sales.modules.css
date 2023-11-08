@@ -1,0 +1,119 @@
+@import url('https://fonts.cdnfonts.com/css/bad-script');
+
+.sales{
+    padding-left: 10vh;
+    margin-top: 5%;
+}
+
+.salestext{
+    margin-bottom: 3%;
+}
+
+#salestext1{
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 35px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#salestext2{
+    font-family: 'Bad Script', sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: left;
+    color: #514A7E;
+    margin-left: 13%;
+}
+
+.salesitems{
+    display: flex;
+    justify-content: space-between;
+}
+
+#salesimage{
+    height: 30vh;
+    width: 25vh;
+}
+
+.prices{
+    margin-bottom: 3%;
+}
+
+.price{
+    display: inline-block;
+    margin-left: 2vh;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px;
+    text-align: left;
+    color: #7D7D7D;
+    text-decoration-line: line-through;
+}
+
+.discauntprice{
+    display: inline-block;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+}
+
+.name_icons{
+    height: 3vh;
+}
+
+.name{
+    float: left;
+    display: inline-block;
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.icons{
+    float: right;
+    display: inline-block;
+}
+
+#shoples{
+    margin-left: 1vh;
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    height: 4vh;
+    width: 15vh;
+    background-color: #FFFDF5;
+    border: 0.5px solid #121212;
+}
+
+#details{
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#stars{
+    float: right;
+    margin-left: 5px;
+    margin-top: 11%;
+}
+
+#arrow3{
+    margin-left: 1vh;
+}
