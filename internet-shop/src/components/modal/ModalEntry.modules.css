@@ -1,0 +1,139 @@
+.modalentry{
+    width: 90vh;
+    height: 45vh;
+    background-color: #FFFDF5;
+    box-shadow: 0px 4px 20px 0px rgba(51, 51, 51, 0.05);
+    margin-left: -127vh;
+    margin-top: -19vh;
+    overflow: hidden;
+}
+
+.modalentry_close {
+    display: none;
+}
+
+#elipseentry{
+    width: 40vh;
+    height: 40vh;
+    border: solid 1px #514A7E;
+    border-radius: 50%;
+    font-size: 0;
+    position: relative;
+    left: 80%;
+    top: 55%;
+}
+
+#otherentry{
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 9%;
+}
+
+#formentry{
+    height: 35vh;
+    width: 75vh;
+    margin-top: -53%;
+}
+
+#closeentry{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    width: 4vh;
+    height: 4vh;
+    border: solid 1px #514A7E;
+    background-color:#514A7E;
+    border-radius: 50%;
+}
+
+.otherentry{
+    display: inline-block;
+    float: left;
+    margin-top: 7%;
+}
+
+.entrytext1{
+    margin-bottom: 5vh;
+}
+
+#entrytext1{
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 88%;
+    margin-bottom: 100vh;
+}
+
+.entryinput{
+    border: none;
+    border-bottom: 1px solid #7D7D7D;
+    background-color: #FFFDF5;
+    margin-bottom: 5%;
+    width: 90%;
+}
+
+.entryinput::placeholder{
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 120%;
+}
+
+.entrytext2{
+    margin-bottom: 5%;
+}
+
+#entrytext2{
+    color: #514A7E;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+}
+
+.entrybutton{
+    display: flex;
+}
+
+#entryenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid #514A7E;
+    background-color: #514A7E;
+    height: 4vh;
+    width: 14vh;
+}
+
+#entryentertext{
+    color: #FFFDF5;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#entryregistrate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid #514A7E;
+    background-color: #FFFDF5;
+    height: 4vh;
+    width: 14vh;
+    margin-left: 10%;
+}
+
+#entryregistratetext{
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
