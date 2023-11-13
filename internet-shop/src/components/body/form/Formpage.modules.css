@@ -1,0 +1,88 @@
+.formpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #514A7E;
+    margin-top: 5%;
+    width: 50vw;
+    height: 45vh;
+}
+
+.Form{
+    background-color: white;
+    width: 40vw;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width: 35vw;
+    height: 28vh;
+}
+
+.formtext{
+    margin-bottom: 3%;
+}
+
+#text{
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.formitems{
+    margin-left: 1%;
+}
+
+.forminput{
+    border: none;
+    border-bottom: 1px solid #7D7D7D;;
+    margin-bottom: 3%;
+}
+
+.forminput::placeholder{
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 120%;
+}
+
+.inputcheck{
+    display: flex;
+    margin-top: -2.5%;
+}
+
+.inputtext{
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 118%;
+    margin-top: 0.5%;
+}
+
+.buttonform{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid #514A7E;
+    background-color: #514A7E;
+    height: 3vh;
+    width: 15vh;
+}
+
+.buttontext{
+    color:white;
+}
+
+#arrow3{
+    margin-left: 0.5vw;
+}
