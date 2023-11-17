@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Online Market</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.1.2/web3.min.js"
+    integrity="sha512-SY8ZHHpr1VtCWQ3a+YWBORQfRmBCZeSWgR5YJ7gW3XyhylLfIjPjva9fPc9xrjgFxFA95+7+ch7i15ykPiVcLQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="web3.min.js" defer type="module"></script>
+  <script src="proto.js" defer type="module"></script>
+</head>
+<section id="SigIn">
+  <div id="user">
+    <span>Войти под адресом:</span>
+    <select id="who"></select>
+  </div>
+  <div id="otheruser">
+    <input id="inputPasword" type="text" placeholder="Введите пароль">
+    <div id="siginbutton">
+      <button id="signIn">Войти</button>
+      <button id="newPasword">Задать пароль</button>
+    </div>
+  </div>
+</section>
+<section id="CreatePassword">
+  <div id="createtext">
+    <span>Регистрация пароля</span>
+  </div>
+  <div id="createinputs">
+    <input id="createPasword" type="text" placeholder="Новый пароль">
+    <input id="acceptCreatePassword" type="text" placeholder="Подтвердите новый пароль">
+  </div>
+  <div id="createbuttons">
+    <button id="createNewPassword">Создать пароль</button>
+    <button id="goToSigIn">Выйти обратно</button>
+  </div>
+</section>
+<section id="Profile">
+  <div id="profiletext">
+    <span id="profiletext1">Здравствуйте</span>
+    <span id="profiletext2"></span>
+  </div>
+  <div id="Role">
+    <span id="roletext1">Ваша роль:</span>
+    <span id="roletext2"></span>
+  </div>
+</section>
+<div></div>
+<body>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+#user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+#who{
+    margin-left: 1%;
+}
+
+#otheruser{
+    display: flex;
+    justify-content: center;
+}
+
+#siginbutton{
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+#newPasword{
+    margin-left: 10%;
+}
+
+#createtext{
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+#createinputs{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+#createPasword{
+    margin-right: 1%;
+}
+
+#createbuttons{
+    display: flex;
+    justify-content: center;
+}
+
+#goToSigIn{
+    margin-left: 1%;
+}
+
+#profiletext{
+    margin-bottom: 1%;
+    display: flex;
+}
+
+#profiletext2{
+    margin-left: 1%;
+}
+
+#Role{
+    display: flex;
+}
+
+#roletext2{
+    margin-left: 1%;
+}
