@@ -1,0 +1,120 @@
+.reviews{
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-top: 5%;
+}
+
+.reviewstext{
+    margin-bottom: 3%;
+}
+
+#reviewtext{
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 88%;
+}
+
+.reviewsitems{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviewitem{
+    display: flex;
+    width: 25vw;
+    height: 17vh;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.photo{
+    width: 5vw;
+    height: 10vh;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 7%;
+    margin-left: 5%;
+}
+
+#reviewimage{
+    width: 100%;
+    height: 100%;
+}
+
+.other{
+    width: 14vw;
+    height: 10vh;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+#star{
+    margin-right: 5px;
+}
+
+.review{
+    margin-top: 1vh;
+    width: 15vw;
+    height: 9vh;
+}
+
+#review{
+    color: #7D7D7D;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 170%;
+}
+
+.dates{
+    display: flex;
+    justify-content: space-between;
+    vertical-align: bottom;
+}
+
+.who{
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+}
+
+.date{
+    color: #514A7E;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+}
+
+.elipsereview{
+    margin-top: 3%;
+    margin-right: 15%;
+}
+
+.reviewbutton{
+    margin-top: 2%;
+}
+
+#buttonreview{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid #514A7E;
+    background-color: #514A7E;
+    height: 4vh;
+    width: 7vw;
+}
+
+#revbuttontext{
+    color: #FFFDF5;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
