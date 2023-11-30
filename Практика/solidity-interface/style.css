@@ -1,0 +1,153 @@
+#Login, #CreatePassword, #Profile, #Forms {
+  margin: 20px;
+}
+
+span, input {
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 24px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#headerprofile{
+    display: flex;
+    justify-content: space-between;
+}
+
+#newPasword, #registration,
+#improvebutton, #checkreviewsbutton, #requestbutton, #newadminiatratorsbutton, #checkshopsbutton, 
+#newshopbutton, #createrequestbutton, #workshopbutton, #createreviewbutton, 
+#leavecommentbutton, #createNewPassword, #requestesloverbutton, 
+#closeallshops, #createnewshopbutton, #createnewreviewbutton, #createnewcomentbutton{
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+#newPasword, #registration{
+  background-color: #008CBA;
+}
+
+button[id$="close"] {
+  background-color: #f44336;
+}
+
+div[id^="role"], div[id^="balanse"], div[id^="city"], div[id^="numbershop"] {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+#CheckReviews{
+    border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+#lowerbutton, #deleteshopbutton, #reviewclose1, #reviewclose2, #goprofilecoment, #goprofilereview, 
+#goprofilenewshops, #closeallshops, #closerequesteslover, #gologin {
+  background-color: #f44336;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+#gotologinbutton, #login {
+  background-color: #ff6600;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+span, div {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+span[id^="profiletext"], span[id^="roletext"], span[id^="balansetext"], span[id^="numbershoptext"],
+span[id^="citytext"], span[id^="checkreviewstext"], span[id^="shopworkerstext"], span[id^="improvetext"],
+span[id^="lovertext"], span[id^="requestestext"], span[id^="newadminiatratorstext"], span[id^="checkshopstext"],
+span[id^="newshoptext"], span[id^="deleteshoptext"], span[id^="createrequesttext"], span[id^="workshoptext"],
+span[id^="createreviewtext"], span[id^="leavecommenttext"], span[id^="createrequesttext"], span[id^="reviewstext"],
+span[id^="commenttext"], span[id^="requesteslovertext"], span[id^="checkallshopstext"] {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+div[id^="reviewsinfo"], div[id^="requesteslover"], div[id^="checkallshopstext"], div[id^="newshopstext"], div[id^="reviewstext"], div[id^="commenttext"] {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+
+th {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+input[type="text"], input[type="password"], input[type="number"], textarea {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin: 5px 0;
+}
+
+#createPasword, #acceptCreatePassword {
+  border: 1px solid #ff6600;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.review, .comment {
+  font-style: italic;
+  color: #555;
+}
+
+select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin: 5px 0;
+}
+
+#user, #loginbutton, #otheruserinput, #createtext, #createinputs, #createbuttons,
+#commenttext, #commenttexts, #marks, #GoToProfileComment, #reviewstext,
+#stars, #reveiw, #GoToProfileReviews, #newshopstext, #newshopsinputs, 
+#GoToProfileShops, #requesteslovertext, #requestesloverother, #requestesloverbuttons,
+#checkreviews1, #checkreviews2, #reviewbutton1, #reviewbutton2, #checkallshopstext,
+#checkallshopsbutton {
+  display: flex;
+  justify-content: center;
+}
+
+#checkreviewtext1, #checkreviewtext2 {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#reviewinput{
+    height: 20vh;
+    width: 30%;
+}
