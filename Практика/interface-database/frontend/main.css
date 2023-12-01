@@ -1,0 +1,127 @@
+#Home, #CheckAllTables, #Tables, #CreatingDates {
+  margin: 20px;
+}
+
+h1 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+#CheckTables, #AddAuthor, #AddGenree, #AddBook, #AddQuantyBook, #AddReader, #AddMoving, #UpdateMoving {
+  margin-bottom: 20px;
+}
+
+#CheckTables, #AddAuthor, #AddGenree, #AddBook, #AddQuantyBook, #AddReader, #AddMoving, #UpdateMoving, #CheckAllTables, #Tables, #CreatingDates {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+div[id^="Add"], div[id^="Check"], div[id^="table"], div[id^="create"] {
+    display: flex;
+    justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+button[id^="goto"], button[id^="new"], button[id^="close"] {
+  margin: 10px;
+}
+
+#tablesautors, #tablesgenre, #tablesbooks, #tablesquantybooks, #tablesreders, #tablesmoving {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+span, div, th, td, input, textarea {
+  font-size: 15px;
+}
+
+button[id^="button"], button[id^="goto"] {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+button[id^="button"]:hover, button[id^="goto"]:hover {
+  background-color: #45a049;
+}
+
+button[id^="new"], button[id^="close"] {
+  background-color: #008CBA;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+button[id^="new"]:hover, button[id^="close"]:hover {
+  background-color: #007A8A;
+}
+
+input[type="text"], input[type="number"], input[type="date"], textarea {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+#tableauthors, #tablegenres, #tablebooks, #tablequantybooks, #tablereaders, #tablemoving, #CreatingDates > div {
+  margin: 20px auto;
+}
+
+#gotohomebutton, #buttonautors, #buttongenre, #buttonbooks, #buttonquantybooks, #buttonreders, #buttonmoving, #closeauthor,
+#closegenre, #closebook, #closequantybook, #closereader, #closemoving {
+  background-color: #f44336;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+#gotohomebutton:hover, #buttonautors:hover, #buttongenre:hover, #buttonbooks:hover, #buttonquantybooks:hover, #buttonreders:hover, #buttonmoving:hover,
+#closeauthor:hover, #closegenre:hover, #closebook:hover, #closequantybook:hover, #closereader:hover, #closemoving:hover {
+  background-color: #d32f2f;
+}
+
+#updatemovingbutton, button[id^="buttonupdate"] {
+  background-color: #ff9800;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+#updatemovingbutton:hover, button[id^="buttonupdate"]:hover {
+  background-color: #e68a00;
+}
+
+#checkauthorsbuttons, #checkgenresbuttons, #checkbooksbuttons, #checkquantybooksbuttons, #checkridersbuttons, #checkmovingsbuttons{
+  background-color: #673AB7;
+  color: white;
+  border: 1px solid #673AB7;
+  border-radius: 30px;
+  padding: 15px 25px;
+  margin: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}

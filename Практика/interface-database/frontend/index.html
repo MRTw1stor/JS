@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="./scripts/proto.js" defer type="module"></script>
+</head>
+
+<body>
+    <section id="Home">
+        <h1>Добро пожаловать в библеотеку</h1>
+        <div id="CheckTables">
+            <span id="checktabletext">Посмотреть таблицы</span>
+            <button id="buttonchecktable">Посмотреть</button>
+        </div>
+        <div id="AddAuthor">
+            <span id="addauthortext">Добавить нового автора</span>
+            <button id="gotoaddauthor">Перейти</button>
+        </div>
+        <div id="AddGenree">
+            <span id="addgenretext">Добавить новый жанр</span>
+            <button id="gotoaddgenre">Перейти</button>
+        </div>
+        <div id="AddBook">
+            <span id="addbooktext">Добавить новую книгу</span>
+            <button id="gotoaddbook">Перейти</button>
+        </div>
+        <div id="AddQuantyBook">
+            <span id="addquantybooktext">Добавить количество книг</span>
+            <button id="gotoaddquantybook">Перейти</button>
+        </div>
+        <div id="AddReader">
+            <span id="addreadertext">Добавить нового читателя</span>
+            <button id="gotoaddreader">Перейти</button>
+        </div>
+        <div id="AddMoving">
+            <span id="addmovingtext">Сдать книгу читателю</span>
+            <button id="gotoaddmoving">Перейти</button>
+        </div>
+        <div id="UpdateMoving">
+            <span id="updatemovingtext">Забрать книгу у читателя</span>
+            <input id="updatemovinginput" type="number" placeholder="Введите номер карточки">
+            <button id="updatemovingbutton">Забрать</button>
+        </div>
+    </section>
+    <section id="CheckAllTables">
+        <h1 id="checkalltablestext">Все таблицы</h1>
+        <div id="checkauthors">
+            <button id="checkauthorsbuttons">Посмотреть таблицу авторов</button>
+        </div>
+        <div id="checkgenre">
+            <button id="checkgenresbuttons">Посмотреть таблицу жанров</button>
+        </div>
+        <div id="checkbook">
+            <button id="checkbooksbuttons">Посмотреть таблицу книг</button>
+        </div>
+        <div id="checkquantybook">
+            <button id="checkquantybooksbuttons">Посмотреть таблицу наличия книг</button>
+        </div>
+        <div id="checkriders">
+            <button id="checkridersbuttons">Посмотреть таблицу читателей</button>
+        </div>
+        <div id="checkmovings">
+            <button id="checkmovingsbuttons">Посмотреть таблицу книг у читателей</button>
+        </div>
+        <div id="gotohome">
+            <button id="gotohomebutton">Назад</button>
+        </div>
+    </section>
+    <section id="Tables">
+        <div id="tableauthors">
+            <h1 id="tableauthorstext">Все авторы</h1>
+            <div id="gototablesautors">
+                <button id="buttonautors">Назад</button>
+            </div>
+            <div id="autors">
+                <table id="autorstable">
+                    <thead>
+                        <tr>
+                            <th>Номер Автора</th>
+                            <th>Фамилия</th>
+                            <th>Имя</th>
+                            <th>Отчество</th>
+                            <th>Дата рождения</th>
+                            <th>Действие</th>
+                        </tr>
+                    </thead>
+                    <tbody id="author"></tbody>
+                </table>
+            </div>
+        </div>
+        <div id="tablegenres">
+            <h1 id="tablegenrestext">Все жанры</h1>
+            <div id="gototablesgenre">
+                <button id="buttongenre">Назад</button>
+            </div>
+            <div id="genre">
+                <table id="genrestable">
+                    <thead>
+                        <tr>
+                            <th>Номер Жанра</th>
+                            <th>Жанр</th>
+                            <th>Описание жанра</th>
+                            <th>Действие</th>
+                        </tr>
+                    </thead>
+                    <tbody id="genres"></tbody>
+                </table>
+            </div>
+        </div>
+        <div id="tablebooks">
+            <h1 id="tablebookstext">Все книги</h1>
+            <div id="gototablesbooks">
+                <button id="buttonbooks">Назад</button>
+            </div>
+            <div id="books">
+                <table id="bookstable">
+                    <thead>
+                        <tr>
+                            <th>Номер книги</th>
+                            <th>Название книги</th>
+                            <th>ID Жанра</th>
+                            <th>ID Автора</th>
+                            <th>Действие</th>
+                        </tr>
+                    </thead>
+                    <tbody id="book"></tbody>
+                </table>
+            </div>
+        </div>
+        <div id="tablequantybooks">
+            <h1 id="tablequantybookstext">Книги в наличии</h1>
+            <div id="gototablesquantybooks">
+                <button id="buttonquantybooks">Назад</button>
+            </div>
+            <div id="quantybooks">
+                <table id="quantybookstable">
+                    <thead>
+                        <tr>
+                            <th>ID книги</th>
+                            <th>Количество</th>
+                            <th>Действие</th>
+                        </tr>
+                    </thead>
+                    <tbody id="quantybook"></tbody>
+                </table>
+            </div>
+        </div>
+        <div id="tablereaders">
+            <h1 id="tablereaderstext">Все читатели</h1>
+            <div id="gototablesreders">
+                <button id="buttonreders">Назад</button>
+            </div>
+            <div id="readers">
+                <table id="readerstable">
+                    <thead>
+                        <tr>
+                            <th>Номер Читателя</th>
+                            <th>Фамилия</th>
+                            <th>Имя</th>
+                            <th>Отчество</th>
+                            <th>Адрес</th>
+                            <th>Серия паспорта</th>
+                            <th>Номер паспорта</th>
+                            <th>Паспорт выдан страна</th>
+                            <th>Паспорт выдан город</th>
+                            <th>Номер телефона</th>
+                            <th>Действие</th>
+                        </tr>
+                    </thead>
+                    <tbody id="reader"></tbody>
+                </table>
+            </div>
+        </div>
+        <div id="tablemoving">
+            <h1 id="tablemovingstext">Все читатели</h1>
+            <div id="gototablesmoving">
+                <button id="buttonmoving">Назад</button>
+            </div>
+            <div id="moving">
+                <table id="movingstable">
+                    <thead>
+                        <tr>
+                            <th>ID карточки</th>
+                            <th>ID Книги</th>
+                            <th>ID Читателя</th>
+                            <th>Дата взячи</th>
+                            <th>Дата сдачи</th>
+                            <th>Книга на руках</th>
+                            <th>Просрочил срок сдачи</th>
+                            <th>Дата возвращение просрочки</th>
+                            <th>Действие</th>
+                        </tr>
+                    </thead>
+                    <tbody id="movings"></tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="CreatingDates">
+        <div id="createauthor">
+            <h1 id="createauthortext">Создание нового автора</h1>
+            <div id="surnameandnameauthor">
+                <input id="inputauthorsurname" type="text" placeholder="Введите фамилию автора">
+                <input id="inputauthorname" type="text" placeholder="Введите имя автора">
+            </div>
+            <div id="lastbameanddate">
+                <input id="inputauthorlastname" type="text" placeholder="Введите отчество автора">
+                <input id="inputauthordate" type="date">
+            </div>
+            <div id="buttons">
+                <button id="newauthor">Добавить</button>
+                <button id="closeauthor">Закрыть</button>
+            </div>
+        </div>
+        <div id="creategenre">
+            <h1 id="creategenretext">Создание нового жанра</h1>
+            <div id="genrename">
+                <input id="inputgenrename" type="text" placeholder="Введите название жанра">
+            </div>
+            <div id="genreopisanie">
+                <textarea id="inputgenreopisanie" placeholder="Напишите описание жанра"></textarea>
+            </div>
+            <div id="buttons">
+                <button id="newgenre">Добавить</button>
+                <button id="closegenre">Закрыть</button>
+            </div>
+        </div>
+        <div id="createbooks">
+            <h1 id="creatbooktext">Создание новой книги</h1>
+            <div id="bookname">
+                <input id="inputbookname" type="text" placeholder="Введите название книги">
+            </div>
+            <div id="genreandauthor">
+                <input id="inputgenreid" type="number" placeholder="Введите id жанра">
+                <input id="inputauthorid" type="number" placeholder="Введите id автора">
+            </div>
+            <div id="buttons">
+                <button id="newbook">Добавить</button>
+                <button id="closebook">Закрыть</button>
+            </div>
+        </div>
+        <div id="createquantybook">
+            <h1 id="createquantybooktext">Добавление количества книг</h1>
+            <div id="quantybook">
+                <input id="inputbookid" type="number" placeholder="Введите id книги">
+                <input id="inputquantybook" type="number" placeholder="Введите количество книг">
+            </div>
+            <div id="buttons">
+                <button id="newquantybook">Добавить</button>
+                <button id="closequantybook">Закрыть</button>
+            </div>
+        </div>
+        <div id="createreaders">
+            <h1 id="createreaderstext">Добавление нового читателя</h1>
+            <div id="surnameandnamereader">
+                <input id="inputreadersurname" type="text" placeholder="Введите фамилию читателя">
+                <input id="inputreadername" type="text" placeholder="Введите имя читателя">
+            </div>
+            <div id="lastbameandadress">
+                <input id="inputreaderlastname" type="text" placeholder="Введите отчество читателя">
+                <input id="inputreaderadress" type="text" placeholder="Введите адресс читателя">
+            </div>
+            <div id="pasportnumbers">
+                <input id="inputreaderseria" type="number" placeholder="Введите серию паспорта читателя">
+                <input id="inputreadernomer" type="number" placeholder="Введите номер паспорта читателя">
+            </div>
+            <div id="pasporttext">
+                <input id="inputreadercountry" type="text" placeholder="Введите страну паспорта читателя">
+                <input id="inputreadercity" type="text" placeholder="Введите город паспорта читателя">
+            </div>
+            <div id="phone">
+                <input id="inputreaderphone" type="number" placeholder="Введите номер телефона читателя">
+            </div>
+            <div id="buttons">
+                <button id="newreader">Добавить</button>
+                <button id="closereader">Закрыть</button>
+            </div>
+        </div>
+        <div id="createmoving">
+            <h1 id="createmovingtext">Сдать книгу читателю</h1>
+            <div id="readerandbook">
+                <input id="inputmovingbookid" type="number" placeholder="Введите id книги">
+                <input id="inputmovingreaderid" type="number" placeholder="Введите id читателя">
+            </div>
+            <div id="bookin">
+                <input id="inputbookindata" type="date">
+            </div>
+            <div id="buttons">
+                <button id="newmoving">Добавить</button>
+                <button id="closemoving">Закрыть</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
