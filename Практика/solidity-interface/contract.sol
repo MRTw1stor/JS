@@ -22,7 +22,7 @@ contract Seatransfer {
 
     Shops[] private shops;
 
-    // СТруктура для работников магазина
+    // Структура для работников магазина
     struct Workers {
         uint id_shop;
         address worker;
@@ -195,7 +195,7 @@ contract Seatransfer {
             );
         }
 
-        require(flag == 2, "121212112");
+        require(flag == 2);
 
         workers.push(Workers(_Idshop, msg.sender));
     }
@@ -483,7 +483,7 @@ contract Seatransfer {
             revert("You cannot give 2 reviews to one comment");
         }
 
-        require(flag == 2, "1234");
+        require(flag == 2);
 
         for (uint i = 0; i < reviews.length; i++) {
             if (_rating == 0) {
