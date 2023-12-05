@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Переводы</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="web3.min.js" defer type="module"></script>
+  <script src="proto.js" defer type="module"></script>
+</head>
+
+<body>
+  <section class="User">
+    <div id="user">
+      <h2>Вы вошли под адресом:</h2>
+      <select id="who"></select>
+      <h3 id="balance"></h3>
+      <h4 id="role"></h4>
+    </div>
+  </section>
+
+  <section id="controlbuttons">
+    <div id="newtransfer">
+      <button id="newTrans">Новый перевод</button>
+    </div>
+
+    <div id="compTrans">
+      <button id="compliteTransfer">Подтвердить перевод</button>
+    </div>
+
+    <div id="canselTrans">
+      <button id="canselTransfer">Отменить перевод</button>
+    </div>
+
+    <div id="comitTransfers">
+      <button id="comitTrans">Входящие переводы</button>
+    </div>
+
+    <div id="sentTransfers">
+      <button id="sentTrans">Отправленные переводы</button>
+    </div>
+
+    <div id="newUsers">
+      <button id="newUser">Создать нового пользователя</button>
+    </div>
+
+    <div id="roleUp">
+      <button id="RoleUp">Подать заявку на повышение</button>
+    </div>
+
+    <div id="comliteUp">
+      <button id="compUp">Проголосовать за повышения</button>
+    </div>
+  </section>
+
+  <section id="modalsandtables">
+    <div id="transfer">
+      <div id="balanceInTransfer">
+        <h2 id="Balance">
+          </h3>
+      </div>
+      <h2>Перевести:</h2>
+      <select id="whom"></select>
+      <input type="number" id="value" placeholder="Введите сумму перевода" />
+      <input type="password" id="code" placeholder="Введите кодовое слово" />
+      <button id="gotransfer">Перевести</button>
+      <div id="goBeck">
+        <button id="quickButton">Выйти в главное меню</button>
+      </div>
+    </div>
+
+    <div id="transferComplite">
+      <h2>Принять</h2>
+      <table id="tableComplite">
+        <thead>
+          <th>От кого</th>
+          <th>Сколько денег</th>
+          <th>Введите кодовое слово</th>
+          <th>Действие</th>
+          <th>Действие</th>
+        </thead>
+      </table>
+      <div id="goBeck">
+        <button id="quickButton">Выйти в главное меню</button>
+      </div>
+    </div>
+
+    <div id="transferCansel">
+      <h2>Отклонить</h2>
+      <table id="tableCansel">
+        <thead>
+          <th>Кому</th>
+          <th>Сколько денег</th>
+          <th>Действие</th>
+        </thead>
+      </table>
+      <div id="goBeck">
+        <button id="quickButton">Выйти в главное меню</button>
+      </div>
+    </div>
+
+    <div id="tableInboxTransfers">
+      <h2>Переводы вам</h2>
+      <table id="tableInbox">
+        <thead>
+          <th>От кого</th>
+          <th>Сколько денег</th>
+        </thead>
+      </table>
+      <div id="goBeck">
+        <button id="quickButton">Выйти в главное меню</button>
+      </div>
+    </div>
+
+    <div id="tableSentTransfers">
+      <h2>Ваши переводы</h2>
+      <table id="tableSent">
+        <thead>
+          <th>Кому</th>
+          <th>Сколько денег</th>
+        </thead>
+      </table>
+      <div id="goBeck">
+        <button id="quickButton">Выйти в главное меню</button>
+      </div>
+    </div>
+
+    <div id="createNewUsers">
+      <h2>Создание нового пользователя</h2>
+      <div id="createnewusersinputs">
+        <input id="createnewusername" type="text" placeholder="Введите имя пользователя">
+        <input id="createnewuseradress" type="text" placeholder="Введите адрес пользователя">
+      </div>
+      <div id="createnewusersbuttons">
+        <button id="quickButton">Выйти в главное меню</button>
+        <button id="createuser">Создать</button>
+      </div>
+    </div>
+
+    <div id="tableOffersUp">
+      <h2>Заявки на повышение</h2>
+      <table id="tableOffers">
+        <thead>
+          <th>Кто</th>
+          <th>Действие</th>
+          <th>Действие</th>
+        </thead>
+      </table>
+      <div id="goBeck">
+        <button id="quickButton">Выйти в главное меню</button>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
