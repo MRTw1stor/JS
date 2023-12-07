@@ -1,0 +1,125 @@
+html{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.User {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  #user {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+  
+  #controlbuttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  #controlbuttons button, .buttonAccept {
+    margin: 5px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #controlbuttons button:hover, .buttonAccept:hover {
+    background-color: #45a049;
+  }
+  
+  #modalsandtables {
+    margin-top: 20px;
+  }
+  
+  #modalsandtables > div {
+    margin: 20px 0;
+  }
+  
+  #modalsandtables span {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #modalsandtables select, #modalsandtables input[type="number"], #modalsandtables input[type="password"], #createnewusersinputs input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #gotransfer, #createuser {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #gotransfer:hover, #createuser:hover {
+    background-color: #007A9B;
+  }
+
+  #quickButton, .buttonCansel{
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  #quickButton:hover, .buttonCansel:hover {
+    background-color: #d32f2f;
+  }
+  
+  #modalsandtables table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  #modalsandtables th, #modalsandtables td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #modalsandtables th {
+    background-color: #f2f2f2;
+  }
+  
+  #modalsandtables input[type="text"]::placeholder, #modalsandtables input[type="number"]::placeholder, #modalsandtables input[type="password"]::placeholder, #createnewusersinputs input[type="text"]::placeholder {
+    color: #ccc;
+  }
+
+  #balanceInTransfer, #whonandtext, #transferinputs, #transfersbuttons, #transfercomplite, 
+  #transfercomplitebutton, #transfercansel, #transfercanselbutton, #tableinbox,
+  #tableinboxbutton, #tablesent, #tablesentbutton, #createnewuser, #createnewusersinputs,
+  #createnewusersbuttons, #tableoffers, #tableoffersbutton{
+    display: flex;
+    justify-content: center;
+  }
+
+  #transfertext{
+    margin-top: 1vh;
+  }
