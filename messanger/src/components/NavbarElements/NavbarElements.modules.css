@@ -1,0 +1,105 @@
+#navbarHome {
+    margin-left: 10%;
+    display: flex;
+    margin-top: 40%;
+}
+#navbarHome h1{
+    margin-left: 30%
+}
+
+#navbarChat {
+    margin-left: 10%;
+    display: flex;
+    margin-top: 4vh;
+}
+#navbarChat h1{
+    margin-left: 40%;
+}
+
+#navbarContacts {
+    margin-left: 10%;
+    display: flex;
+    margin-top: 4vh;
+}
+#navbarContacts h1{
+    margin-left: 20%;
+}
+
+#navbarNotification {
+    margin-left: 10%;
+    display: flex;
+    margin-top: 4vh;
+}
+#navbarNotification h1{
+    margin-left: 15%;
+}
+
+#navbarCalendar {
+    margin-left: 10%;
+    display: flex;
+    margin-top: 4vh;
+}
+#navbarCalendar h1{
+    margin-left: 20%;
+}
+
+#navbarSettings {
+    margin-left: 10%;
+    display: flex;
+    margin-top: 4vh;
+}
+#navbarSettings h1{
+    margin-left: 25%;
+}
+
+#navbarLogout {
+    margin-left: 10%;
+    display: flex;
+    margin-top: 15vh;
+}
+#navbarLogout h1{
+    margin-left: 20px;
+}
+
+#profile{
+    margin-left: 80px;
+    margin-top: 20%;
+}
+
+#photo{
+    display: flex;
+    width: 25%;
+    height: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 12.5%;
+}   
+
+#nameandsurname{
+    margin-top: 3%;
+}
+
+#name, #surname{
+    color: #0D1C2E;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#surname{
+    margin-left: 2%;
+}
+
+h1{
+    color: #707C97;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
