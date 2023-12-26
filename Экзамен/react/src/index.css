@@ -1,0 +1,62 @@
+#search {
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title {
+  margin-bottom: 1.5vh;
+  text-align: center;
+}
+
+#titletext {
+  font-size: 25px;
+}
+
+#searchfilm {
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 1vh;
+  width: 50%;
+}
+
+#items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#item {
+  text-align: center;
+  width: 17%;
+  margin: 1%;
+}
+
+#itemtext, #itemgenre {
+  margin-bottom: 1vh;
+}
+
+#text {
+  font-size: 20;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  max-height: auto;
+  margin-bottom: 1vh;
+}
+
+#genre {
+  font-size: 15;
+  text-align: center;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+#opisanie {
+  font-size: 15;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
