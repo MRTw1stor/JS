@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="./scripts/proto.js" defer type="module"></script>
+</head>
+
+<body>
+    <section id="Home">
+        <h1>Учет техники</h1>
+        <div id="GoComputers">
+            <span id="GoComputersText">Учет компьютеров</span>
+            <button id="GoComputersButton">Перейти</button>
+        </div>
+    </section>
+    <section id="Computers">
+        <h1>Учет компьютеров</h1>
+        <div id="">
+            <div id="ComputerButtons">
+                <div id="ComputerBack">
+                    <span id="ComputerBackText">В главное меню</span>
+                    <button id="ComputerBackButton">Перейти</button>
+                </div>
+                <div id="ComputerCleanFilter">
+                    <span id="ComputerFilter">Очистить фильтры</span>
+                    <button id="ComputerFilterButton">Очистить</button>
+                </div>
+                <div id="ComputerCreateDates">
+                    <span id="ComputerCreateDates">Довавить записи</span>
+                    <button id="ComputerCreateDatesButton">Перейти</button>
+                </div>
+            </div>
+            <div id="ComputerTable">
+                <table id="Computer">
+                    <thead>
+                        <th>Редактировать запись</th>
+                        <th>Номер учета</th>
+                        <th>Модель</th>
+                        <th>Серийный номер</th>
+                        <th>Инвентарный номер</th>
+                        <th>Местонахождение</th>
+                        <th>Кабинет</th>
+                        <th>Статус</th>
+                        <th>Контур</th>
+                        <th>Имя</th>
+                        <th>IP</th>
+                        <th>MAC адрес</th>
+                        <th>Соболь</th>
+                        <th>ОС</th>
+                        <th>Монитор</th>
+                        <th>Номер монитора</th>
+                        <th>Процессор</th>
+                        <th>ОЗУ</th>
+                        <th>Жесткий диск</th>
+                        <th>Номер диска</th>
+                        <th>Объем диска</th>
+                    </thead>
+                    <tbody id="BodyComputer"></tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="ComputerDates">
+        <div id="ComputerCreateDatesBack">
+            <span id="ComputerCreateDatesBackText">К учету компьютеров</span>
+            <button id="ComputerCreateDatesBackButton">Перейти</button>
+        </div>
+        <div id="ComputerChooseTable">
+            <span id="ComputerChooseTableText">Выберите Таблицу</span>
+        </div>
+        <div id="ComputerMonitorBrands">
+            <div id="ComputerNewMonitorBrands">
+                <p id="warningText" style="color: red; display: none;"></p>
+                <input id="ComputerNewMonitorBrandsInput" type="text">
+                <button id="ComputerNewMonitorBrandsButton">Добавить</button>
+            </div>
+            <div id="ComputerExistingMonitorBrands">
+                <table id="ExistingMonitorBrands">
+                    <thead>
+                        <th>Существующие Фирмы Мониторов</th>
+                    </thead>
+                    <tbody id="MonitorBrands"></tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
