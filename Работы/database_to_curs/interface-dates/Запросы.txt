@@ -1,0 +1,75 @@
+-- Active: 1701371795253@@127.0.0.1@5432@utchet@public
+
+-- Выводит названия операционных систем и количество рабочих станций с каждой операционной системой,
+-- но только для тех операционных систем, которые установлены на более чем 5 рабочих станциях.
+SELECT operatingSystem_name, COUNT(station_id) AS station_count
+FROM OperatingSystems
+JOIN WorkStation ON OperatingSystems.operatingSystem_id = WorkStation.station_os
+GROUP BY operatingSystem_name 
+HAVING COUNT(station_id) > 5 
+ORDER BY station_count DESC;
+
+-- Выводит названия отделов и количество рабочих станций в каждом отделе
+SELECT department_name, COUNT(station_id) AS station_count
+FROM Departments
+JOIN AccountingEquipment ON Departments.department_id = AccountingEquipment.department_id
+GROUP BY department_name
+ORDER BY station_count DESC;
+
+-- Выводит название отдела, самый популярный процессор для компьютеров этого отдела и количество таких компьютеров.
+SELECT Departments.department_name, Processors.processor_name, COUNT(WorkStation.station_id) AS processor_count
+FROM Departments
+JOIN AccountingEquipment ON Departments.department_id = AccountingEquipment.department_id
+JOIN WorkStation ON AccountingEquipment.station_id = WorkStation.station_id
+JOIN Processors ON WorkStation.processor_id = Processors.processor_id
+GROUP BY Departments.department_name, Processors.processor_name
+HAVING 
+    COUNT(WorkStation.station_id) = (
+        SELECT MAX(sub.processor_count)
+        FROM (
+            SELECT COUNT(WorkStation_sub.station_id) AS processor_count
+            FROM Departments AS Departments_sub
+            JOIN AccountingEquipment AS AccountingEquipment_sub ON Departments_sub.department_id = AccountingEquipment_sub.department_id
+            JOIN WorkStation AS WorkStation_sub ON AccountingEquipment_sub.station_id = WorkStation_sub.station_id
+            WHERE Departments_sub.department_name = Departments.department_name
+            GROUP BY WorkStation_sub.processor_id
+        ) AS sub
+    )
+ORDER BY Departments.department_name;
+
+-- Выводит название отдела и количество изменений данных о компьютерах для каждого отдела.
+SELECT department_name, COUNT(changesData_id) AS change_count
+FROM Departments
+JOIN AccountingEquipment ON Departments.department_id = AccountingEquipment.department_id
+JOIN ChangesDatas ON AccountingEquipment.accountingEquipment_id = ChangesDatas.accountingEquipment_id
+GROUP BY department_name
+ORDER BY change_count DESC;
+
+-- Выводит название отдела и количество компьютеров с одинаковыми комплектующими для каждого отдела
+SELECT 
+    Departments.department_name,
+    MAX(StationCounts.station_count) AS max_station_count
+FROM Departments
+JOIN (
+    SELECT
+        AccountingEquipment.department_id,
+        WorkStation.model_id,
+        WorkStation.station_os,
+        WorkStation.monitor_model_id,
+        WorkStation.processor_id,
+        WorkStation.ram_id,
+        WorkStation.disk_model_id,
+        COUNT(WorkStation.station_id) AS station_count
+    FROM WorkStation
+    JOIN AccountingEquipment ON WorkStation.station_id = AccountingEquipment.station_id
+    GROUP BY
+        AccountingEquipment.department_id, 
+        WorkStation.model_id,
+        WorkStation.station_os,
+        WorkStation.monitor_model_id,
+        WorkStation.processor_id,
+        WorkStation.ram_id,
+        WorkStation.disk_model_id
+) AS StationCounts ON Departments.department_id = StationCounts.department_id
+GROUP BY Departments.department_name
+ORDER BY max_station_count DESC;

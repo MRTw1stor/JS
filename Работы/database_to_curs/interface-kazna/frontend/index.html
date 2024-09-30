@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="./scripts/proto.js" defer type="module"></script>
+</head>
+
+<body>
+    <section id="Computers">
+        <h1>Учет рабочих станций</h1>
+            <div id="ComputerButtons">
+                <div id="ComputerCleanFilter">
+                    <span id="ComputerCleanFilterText">Очистить фильтры</span>
+                    <button id="ComputerFilterButton">Очистить</button>
+                </div>
+                <div id="ComputerCreateComputer">
+                    <span id="ComputerCreateComputerText">Довавить компьютер</span>
+                    <button id="ComputerCreateComputerButton">Добавить</button>
+                </div>
+                <div id="ComputerWriteOffComputer">
+                    <span id="ComputerWriteOffComputerText">Списать компьютер</span>
+                    <button id="ComputerWriteOffComputerButton">Списать</button>
+                </div>
+                <div id="ComputerWriteOffDates">
+                    <span id="ComputerWriteOffDatesText">Списанные компьютеры</span>
+                    <button id="ComputerWriteOffDatesButton">Перейти</button>
+                </div>
+                <div id="ComputerDeletedComputer">
+                    <span id="ComputerDeletedComputerText">Удаленные компьютеры</span>
+                    <button id="ComputerDeletedComputerButton">Перейти</button>
+                </div>
+                <div id="ComputerImportDates">
+                    <span id="ComputerImportDatesText">Импортировать данные</span>
+                    <button id="ComputerImportDatesButton">Импортировать</button>
+                </div>
+                <div id="ComputerExportDates">
+                    <span id="ComputerExportDatesText">Экспортировать данные</span>
+                    <button id="ComputerExportDatesButton">Экспортировать</button>
+                </div>
+                <div id="ComputerCreateDates">
+                    <span id="ComputerCreateDatesText">Довавить/Отредактировать запись </span>
+                    <button id="ComputerCreateDatesButton">Перейти</button>
+                </div>
+            </div>
+            <div id="ComputerTable">
+                <table id="Computer">
+                    <thead>
+                        <th><img src="./images/pencil-and-ruler.png" alt="pencil-and-ruler"></th>
+                        <th><img src="./images/trashcan.png" alt="trashcan"></th>
+                        <th><img src="./images/archive.png" alt="archive"></th>
+                        <th>Номер учета</th>
+                        <th>Модель</th>
+                        <th>Серийный номер</th>
+                        <th>Инвентарный номер</th>
+                        <th>Отдел</th>
+                        <th>Кабинет</th>
+                        <th>Имя</th>
+                        <th>Статус</th>
+                        <th>Контур</th>
+                        <th>IP</th>
+                        <th>MAC адрес</th>
+                        <th>Соболь</th>
+                        <th>ОС</th>
+                        <th>Монитор</th>
+                        <th>Серийный номер монитора</th>
+                        <th>Процессор</th>
+                        <th>ОЗУ</th>
+                        <th>Жесткий диск</th>
+                        <th>Объем диска</th>
+                        <th>Серийный номер диска</th>
+                    </thead>
+                    <tbody id="BodyComputer"></tbody>
+                </table>
+            </div>
+    </section>
+    <section id="ComputerDates">
+        <div id="ComputerMonitorBrands">
+            <div id="MonitorBrandsWarning">
+                <p id="MonitorBrandsWarningText"></p>
+            </div>
+            <div id="ComputerNewMonitorBrands">
+                <input id="ComputerNewMonitorBrandsInput" type="text">
+                <button id="ComputerNewMonitorBrandsButton">Добавить</button>
+            </div>
+            <div id="ComputerExistingMonitorBrands">
+                <table id="ExistingMonitorBrands">
+                    <thead>
+                        <th><img src="./images/pencil-and-ruler.png" alt="pencil-and-ruler"></th>
+                        <th><img src="./images/trashcan.png" alt="trashcan"></th>
+                        <th>Фирмы Мониторов</th>
+                    </thead>
+                    <tbody id="MonitorBrands"></tbody>
+                </table>
+            </div>
+        </div>
+        <div id="ComputerMonitorModels">
+            <div id="MonitorModelsWarning">
+                <p id="MonitorModelsWarningText"></p>
+            </div>
+            <div id="ComputerNewMonitorModel">
+                <select id="ComputerNewMonitorModelSelect"></select>
+                <input id="ComputerNewMonitorModelInput" type="text">
+                <button id="ComputerNewMonitorModelButton">Добавить</button>
+            </div>
+            <div id="ComputerExistingMonitorModels">
+                <table id="ExistingMonitorModels">
+                    <thead>
+                        <th><img src="./images/pencil-and-ruler.png" alt="pencil-and-ruler"></th>
+                        <th><img src="./images/trashcan.png" alt="trashcan"></th>
+                        <th>Фирмы Мониторов</th>
+                        <th>Модели Мониторов</th>
+                    </thead>
+                    <tbody id="MonitorModels"></tbody>
+                </table>
+            </div>
+        </div>
+        <div id="ComputerDiskCapasity">
+            <div id="DiskCapasityWarning">
+                <p id="DiskCapasityWarningText"></p>
+            </div>
+            <div id="ComputerNewDiskCapasity">
+                <input id="ComputerNewDiskCapasityInput" type="number">
+                <button id="ComputerNewDiskCapasityButton">Добавить</button>
+            </div>
+            <div id="ComputerExistingDiskCapasity">
+                <table id="ExistingDiskCapasity">
+                    <thead>
+                        <th><img src="./images/pencil-and-ruler.png" alt="pencil-and-ruler"></th>
+                        <th><img src="./images/trashcan.png" alt="trashcan"></th>
+                        <th>Объемы Жестких Дисков</th>
+                    </thead>
+                    <tbody id="DiskCapasity"></tbody>
+                </table>
+            </div>
+        </div>
+        <div id="ComputerDiskBrand">
+            <div id="DiskBrandWarning">
+                <p id="DiskBrandWarningText"></p>
+            </div>
+            <div id="ComputerNewDiskBrand">
+                <input id="ComputerNewDiskBrandInput" type="text">
+                <button id="ComputerNewDiskBrandButton">Добавить</button>
+            </div>
+            <div id="ComputerExistingDiskBrand">
+                <table id="ExistingDiskBrand">
+                    <thead>
+                        <th><img src="./images/pencil-and-ruler.png" alt="pencil-and-ruler"></th>
+                        <th><img src="./images/trashcan.png" alt="trashcan"></th>
+                        <th>Фирмы Жестких Дисков</th>
+                    </thead>
+                    <tbody id="DiskBrand"></tbody>
+                </table>
+            </div>
+        </div>
+        <div id="ComputerDiskModels">
+            <div id="DiskModelsWarning">
+                <p id="DiskModelsWarningText"></p>
+            </div>
+            <div id="ComputerNewDiskModels">
+                <select id="ComputerNewDiskModelSelectBrand"></select>
+                <input id="ComputerNewDiskModelsInput" type="text">
+                <select id="ComputerNewDiskModelSelectCapasity"></select>
+                <button id="ComputerNewDiskModelsButton">Добавить</button>
+            </div>
+            <div id="ComputerExistingDiskModels">
+                <table id="ExistingDiskModels">
+                    <thead>
+                        <th><img src="./images/pencil-and-ruler.png" alt="pencil-and-ruler"></th>
+                        <th><img src="./images/trashcan.png" alt="trashcan"></th>
+                        <th>Фирмы Жестких Дисков</th>
+                        <th>Модели Жестких Дисков</th>
+                        <th>Объемы Жестких Дисков</th>
+                    </thead>
+                    <tbody id="DiskModels"></tbody>
+                </table>
+            </div>
+        </div>
+        <div id="ComputerStationModels">
+            <div id="ComputerStationWarning">
+                <p id="ComputerStationWarningText"></p>
+            </div>
+            <div id="ComputerNewStationModels">
+                <input id="ComputerNewStationModelsInput" type="text">
+                <button id="ComputerNewStationModelsButton">Добавить</button>
+            </div>
+            <div id="ComputerExistingStationModels">
+                <table id="ExistingStationModels">
+                    <thead>
+                        <th><img src="./images/pencil-and-ruler.png" alt="pencil-and-ruler"></th>
+                        <th><img src="./images/trashcan.png" alt="trashcan"></th>
+                        <th>Модели Станций</th>
+                    </thead>
+                    <tbody id="StationModels"></tbody>
+                </table>
+            </div>
+        </div>
+        <div id="ComputerOperatingSystems">
+            <div id="ComputerOperatingSystemsWarning">
+                <p id="ComputerOperatingSystemsWarningText"></p>
+            </div>
+            <div id="ComputerNewOperatingSystems">
+                <input id="ComputerNewOperatingSystemsInput" type="text">
+                <button id="ComputerNewOperatingSystemsButton">Добавить</button>
+            </div>
+            <div id="ComputerExistingOperatingSystems">
+                <table id="ExistingOperatingSystems">
+                    <thead>
+                        <th><img src="./images/pencil-and-ruler.png" alt="pencil-and-ruler"></th>
+                        <th><img src="./images/trashcan.png" alt="trashcan"></th>
+                        <th>Операционные Системы</th>
+                    </thead>
+                    <tbody id="OperatingSystems"></tbody>
+                </table>
+            </div>
+        </div>
+        <div id="ComputerProcessors">
+            <div id="ComputerProcessorsWarning">
+                <p id="ComputerProcessorsWarningText"></p>
+            </div>
+            <div id="ComputerNewProcessors">
+                <input id="ComputerNewProcessorsInput" type="text">
+                <button id="ComputerNewProcessorsButton">Добавить</button>
+            </div>
+            <div id="ComputerExistingProcessors">
+                <table id="ExistingProcessors">
+                    <thead>
+                        <th><img src="./images/pencil-and-ruler.png" alt="pencil-and-ruler"></th>
+                        <th><img src="./images/trashcan.png" alt="trashcan"></th>
+                        <th>Процессоры</th>
+                    </thead>
+                    <tbody id="Processors"></tbody>
+                </table>
+            </div>
+        </div>
+        <div id="ComputerRam">
+            <div id="ComputerRamWarning">
+                <p id="ComputerRamWarningText"></p>
+            </div>
+            <div id="ComputerNewRam">
+                <input id="ComputerNewRamInput" type="number">
+                <button id="ComputerNewRamButton">Добавить</button>
+            </div>
+            <div id="ComputerExistingRam">
+                <table id="ExistingRam">
+                    <thead>
+                        <th><img src="./images/pencil-and-ruler.png" alt="pencil-and-ruler"></th>
+                        <th><img src="./images/trashcan.png" alt="trashcan"></th>
+                        <th>Объемы Оперативной Памяти</th>
+                    </thead>
+                    <tbody id="Ram"></tbody>
+                </table>
+            </div>
+        </div>
+        <div id="ComputerDepartament">
+            <div id="ComputerDepartamentWarning">
+                <p id="ComputerDepartamentWarningText"></p>
+            </div>
+            <div id="ComputerNewDepartament">
+                <input id="ComputerNewDepartamentInput" type="text">
+                <button id="ComputerNewDepartamentButton">Добавить</button>
+            </div>
+            <div id="ComputerExistingDepartament">
+                <table id="ExistingDepartament">
+                    <thead>
+                        <th><img src="./images/pencil-and-ruler.png" alt="pencil-and-ruler"></th>
+                        <th><img src="./images/trashcan.png" alt="trashcan"></th>
+                        <th>Отделы</th>
+                    </thead>
+                    <tbody id="Departament"></tbody>
+                </table>
+            </div>
+        </div>
+        <div id="ComputerConturs">
+            <div id="ContursWarning">
+                <p id="ContursWarningText"></p>
+            </div>
+            <div id="ComputerNewConturs">
+                <input id="ComputerNewContursInput" type="text">
+                <button id="ComputerNewContursButton">Добавить</button>
+            </div>
+            <div id="ComputerExistingConturs">
+                <table id="ExistingConturs">
+                    <thead>
+                        <th><img src="./images/pencil-and-ruler.png" alt="pencil-and-ruler"></th>
+                        <th><img src="./images/trashcan.png" alt="trashcan"></th>
+                        <th>Контуры компьютеров</th>
+                    </thead>
+                    <tbody id="Conturs"></tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
