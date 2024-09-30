@@ -1,0 +1,250 @@
+-- Active: 1710147455681@@127.0.0.1@5432@utchet@public
+
+-- Вносим данные в таблицу Conturs
+CREATE PROCEDURE insertConturs(
+  conturNameParam VARCHAR
+) 
+AS
+$$
+BEGIN
+  INSERT INTO Conturs (contur_name)
+  VALUES (conturNameParam);
+END;
+$$
+LANGUAGE plpgsql;
+
+-- Вносим данные в таблицу Departments
+CREATE PROCEDURE insertDepartments(
+  departmentNameParam VARCHAR
+) 
+AS
+$$
+BEGIN
+  INSERT INTO Departments (department_name)
+  VALUES (departmentNameParam);
+END;
+$$
+LANGUAGE plpgsql;
+
+-- Вносим данные в таблицу MonitorBrands
+CREATE PROCEDURE insertMonitorBrands(
+  monitorBrandNameParam VARCHAR
+) 
+AS
+$$
+BEGIN
+  INSERT INTO MonitorBrands (brand_name)
+  VALUES (monitorBrandNameParam);
+END;
+$$
+LANGUAGE plpgsql;
+
+-- Вносим данные в таблицу MonitorModels
+CREATE PROCEDURE insertMonitorModels(
+  monitorBrandIdParam INT,
+  monitorModelNameParam VARCHAR
+) 
+AS 
+$$
+BEGIN
+  INSERT INTO MonitorModels (brand_id, model_name)
+  VALUES (monitorBrandIdParam, monitorModelNameParam);
+END;
+$$
+LANGUAGE plpgsql
+
+-- Вносим данные в таблицу DisksCapasity
+CREATE PROCEDURE insertDisksCapasity(
+  diskCapasityParam INT
+)
+AS
+$$
+BEGIN
+  INSERT INTO DisksCapasity (capasity_name)
+  VALUES (diskCapasityParam);
+END;
+$$
+LANGUAGE plpgsql;
+
+-- Вносим данные в таблицу DisksBrands
+CREATE PROCEDURE insertDisksBrands(
+  diskBrandNameParam VARCHAR
+) 
+AS
+$$
+BEGIN
+  INSERT INTO DisksBrands (brand_name)
+  VALUES (diskBrandNameParam);
+END;
+$$
+LANGUAGE plpgsql;
+
+-- Вносим данные в таблицу DisksModels
+CREATE PROCEDURE insertDisksModels(
+  diskBrandIdParam INT,
+  diskCapasityIdParam INT,
+  diskModelNameParam VARCHAR
+) 
+AS 
+$$
+BEGIN
+  INSERT INTO DisksModels (brand_id, capasity_id, model_name)
+  VALUES (diskBrandIdParam, diskCapasityIdParam, diskModelNameParam);
+END;
+$$
+LANGUAGE plpgsql
+
+-- Вносим данные в таблицу StantionsModels
+CREATE PROCEDURE insertStantionsModels(
+  modelNameParam VARCHAR
+) 
+AS
+$$
+BEGIN
+  INSERT INTO StantionsModels (model_name)
+  VALUES (modelNameParam);
+END;
+$$
+LANGUAGE plpgsql;
+
+-- Вносим данные в таблицу OperatingSystems
+CREATE PROCEDURE insertOperatingSystems(
+  systemNameParam VARCHAR
+) 
+AS
+$$
+BEGIN
+  INSERT INTO OperatingSystems (operatingSystem_name)
+  VALUES (systemNameParam);
+END;
+$$
+LANGUAGE plpgsql;
+
+-- Вносим данные в таблицу Processors
+CREATE PROCEDURE insertProcessors(
+  processorNameParam VARCHAR
+) 
+AS
+$$
+BEGIN
+  INSERT INTO Processors (processor_name)
+  VALUES (processorNameParam);
+END;
+$$
+LANGUAGE plpgsql;
+
+-- Вносим данные в таблицу RAM
+CREATE PROCEDURE insertRam(
+  ramCapacityParam INTEGER
+) 
+AS
+$$
+BEGIN
+  INSERT INTO RAM (ram_capacity)
+  VALUES (ramCapacityParam);
+END;
+$$
+LANGUAGE plpgsql;
+
+-- Вносим данные в таблицу WorkStation
+CREATE PROCEDURE insertWorkStation(
+  modelIdParam INT,
+  serialNumberParam VARCHAR,
+  stationNameParam VARCHAR,
+  stationStatusParam BOOLEAN,
+  stationConturParam INT,
+  stationIPParam VARCHAR,
+  MACAddressParam VARCHAR,
+  sobleParam VARCHAR,
+  stationOsParam INT,
+  monitorModelIdParam INT,
+  monitorSerialNumberParam VARCHAR,
+  processorIdParam INT,
+  ramIdParam INT,
+  diskModelIdParam INT,
+  diskSerialNumberParam VARCHAR
+) 
+AS 
+$$
+BEGIN
+
+  IF stationConturParam = 0 THEN
+    stationConturParam = NULL;
+  END IF;
+
+  IF stationOsParam = 0 THEN
+    stationOsParam = NULL;
+  END IF;
+
+  IF monitorModelIdParam = 0 THEN
+    monitorModelIdParam = NULL;
+    monitorSerialNumberParam = NULL;
+  END IF;
+
+  IF processorIdParam = 0 THEN
+    processorIdParam = NULL;
+  END IF;
+
+  IF ramIdParam = 0 THEN
+    ramIdParam = NULL;
+  END IF;
+
+  IF diskModelIdParam = 0 THEN
+    diskModelIdParam = NULL;
+    diskSerialNumberParam = NULL;
+  END IF;
+
+  INSERT INTO WorkStation (model_id, serial_number, station_name, station_status, station_contur, station_IP, MAC_address, 
+    Soble, station_os, monitor_model_id, monitor_serial_number, processor_id, ram_id, disk_model_id, disk_serial_number)
+  VALUES (modelIdParam, serialNumberParam, stationNameParam, stationStatusParam, stationConturParam, stationIPParam, MACAddressParam, sobleParam, 
+    stationOsParam, monitorModelIdParam, monitorSerialNumberParam, processorIdParam, ramIdParam, diskModelIdParam, diskSerialNumberParam);
+END;
+$$
+LANGUAGE plpgsql;
+
+-- Вносим данные в таблицу AccountingEquipment
+CREATE PROCEDURE insertAccountingEquipment(
+  stationtIdParam INT,
+  inventoryNumberParam BIGINT,
+  departmentIdParam INT,
+  cabinetParam VARCHAR
+) 
+AS 
+$$
+BEGIN
+
+  IF inventoryNumberParam = 0 THEN
+    inventoryNumberParam = NULL;
+  END IF;
+
+  INSERT INTO AccountingEquipment (station_id, inventory_number, department_id, cabinet)
+  VALUES (stationtIdParam, inventoryNumberParam, departmentIdParam, cabinetParam);
+END;
+$$
+LANGUAGE plpgsql;
+
+-- Вносим данные в таблицу WriteOffWorkStations
+
+CREATE PROCEDURE insertWriteOffWorkStations(
+  stationtIdParam INT
+)
+AS $$
+BEGIN
+  INSERT INTO WriteOffWorkStations (station_id, writeOff_date)
+  VALUES (stationtIdParam, NOW());
+END;
+$$ 
+LANGUAGE plpgsql;
+
+-- Вносим данные в таблицу DeletedWorkStations
+
+CREATE PROCEDURE insertDeletedWorkStations(
+  stationtIdParam INT
+)
+AS $$
+BEGIN
+  INSERT INTO DeletedWorkStations (station_id, deleted_date)
+  VALUES (stationtIdParam, NOW());
+END;
+$$ 
+LANGUAGE plpgsql;
