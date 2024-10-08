@@ -51,7 +51,7 @@ BEGIN
   VALUES (monitorBrandIdParam, monitorModelNameParam);
 END;
 $$
-LANGUAGE plpgsql
+LANGUAGE plpgsql;
 
 -- Вносим данные в таблицу DisksCapasity
 CREATE PROCEDURE insertDisksCapasity(
@@ -92,7 +92,7 @@ BEGIN
   VALUES (diskBrandIdParam, diskCapasityIdParam, diskModelNameParam);
 END;
 $$
-LANGUAGE plpgsql
+LANGUAGE plpgsql;
 
 -- Вносим данные в таблицу StantionsModels
 CREATE PROCEDURE insertStantionsModels(
